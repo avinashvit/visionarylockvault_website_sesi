@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault Puzzle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Team Selection Overlay -->
+    <div id="team-selection-overlay" class="selection-overlay">
+        <div class="selection-content">
+            <h1>THE VAULT</h1>
+            <p>Identify your team to receive your protocol.</p>
+            <div class="team-grid">
+                <button class="select-team-btn" data-team="1">Team 1</button>
+                <button class="select-team-btn" data-team="2">Team 2</button>
+                <button class="select-team-btn" data-team="3">Team 3</button>
+                <button class="select-team-btn" data-team="4">Team 4</button>
+                <button class="select-team-btn" data-team="5">Team 5</button>
+                <button class="select-team-btn" data-team="6">Team 6</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-container hidden" id="main-app">
+        <header class="header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>THE VAULT</span>
+            </div>
+            <div class="timer-container">
+                <span class="timer-label">ELAPSED TIME</span>
+                <div id="global-timer" class="timer-display">00:00:00</div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <nav class="navigation">
+                <button class="nav-btn" data-target="team-section" data-team="1">Team 1</button>
+                <button class="nav-btn" data-target="team-section" data-team="2">Team 2</button>
+                <button class="nav-btn" data-target="team-section" data-team="3">Team 3</button>
+                <button class="nav-btn" data-target="team-section" data-team="4">Team 4</button>
+                <button class="nav-btn" data-target="team-section" data-team="5">Team 5</button>
+                <button class="nav-btn" data-target="team-section" data-team="6">Team 6</button>
+                <button class="nav-btn vault-btn" data-target="vault-section">Unlock Vault</button>
+            </nav>
+
+            <div class="content-area">
+                <!-- Team Section -->
+                <section id="team-section" class="section active">
+                    <div class="section-header">
+                        <h2 id="team-title">Team 1 Protocol</h2>
+                        <p>Solve the three challenges below to reveal your 3-digit access key.</p>
+                    </div>
+
+                    <div class="puzzles-grid">
+                        <div class="puzzle-card">
+                            <div class="puzzle-icon logical-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4"></path>
+                                    <path d="M12 8h.01"></path>
+                                </svg>
+                            </div>
+                            <h3>Logical Puzzle</h3>
+                            <p id="puzzle-logical" class="puzzle-text">Loading...</p>
+                            <div class="digit-reveal">Digit 1</div>
+                        </div>
+
+                        <div class="puzzle-card">
+                            <div class="puzzle-icon visual-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                    <circle cx="12" cy="12" r="3"></circle>
+                                </svg>
+                            </div>
+                            <h3>Visual Puzzle</h3>
+                            <p id="puzzle-visual" class="puzzle-text">Loading...</p>
+                            <img id="puzzle-visual-image" class="puzzle-image hidden" src="" alt="Visual Puzzle Clue">
+                            <div class="digit-reveal">Digit 2</div>
+                        </div>
+
+                        <div class="puzzle-card">
+                            <div class="puzzle-icon physical-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z">
+                                    </path>
+                                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                                </svg>
+                            </div>
+                            <h3>Physical Task</h3>
+                            <p id="puzzle-physical" class="puzzle-text">Loading...</p>
+                            <div class="digit-reveal">Digit 3</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vault Section -->
+                <section id="vault-section" class="section">
+                    <div class="vault-container">
+                        <div class="vault-graphics">
+                            <div class="vault-door" id="vault-door">
+                                <div class="wheel-handle">
+                                    <div class="spoke"></div>
+                                    <div class="spoke"></div>
+                                    <div class="spoke"></div>
+                                    <div class="spoke"></div>
+                                    <div class="center-hub"></div>
+                                </div>
+                            </div>
+                            <div class="vault-status" id="vault-status-text">SECURE</div>
+                        </div>
+
+                        <div class="vault-interface">
+                            <h2>Enter Access Code</h2>
+                            <p>Enter your team's 3-digit key to unlock the vault.</p>
+
+                            <div class="pin-display">
+                                <div class="pin-box" id="pin-1"></div>
+                                <div class="pin-box" id="pin-2"></div>
+                                <div class="pin-box" id="pin-3"></div>
+                            </div>
+
+                            <div class="keypad">
+                                <button class="key-btn" data-val="1">1</button>
+                                <button class="key-btn" data-val="2">2</button>
+                                <button class="key-btn" data-val="3">3</button>
+                                <button class="key-btn" data-val="4">4</button>
+                                <button class="key-btn" data-val="5">5</button>
+                                <button class="key-btn" data-val="6">6</button>
+                                <button class="key-btn" data-val="7">7</button>
+                                <button class="key-btn" data-val="8">8</button>
+                                <button class="key-btn" data-val="9">9</button>
+                                <button class="key-btn action-btn clear-btn" id="btn-clear">CLR</button>
+                                <button class="key-btn" data-val="0">0</button>
+                                <button class="key-btn action-btn enter-btn" id="btn-enter">ENT</button>
+                            </div>
+                            <div id="error-message" class="error-msg"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Success Overlay -->
+                <div id="success-overlay" class="success-overlay hidden">
+                    <div class="success-content">
+                        <h1>VAULT OPENED</h1>
+                        <p id="winning-team-text">Team X successfully breached the vault!</p>
+                        <div class="final-time">
+                            <span>Final Time: </span>
+                            <span id="final-timer-display">00:00:00</span>
+                        </div>
+                        <button id="btn-reset" class="reset-btn">Reset Simulation</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
