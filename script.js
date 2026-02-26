@@ -26,27 +26,27 @@ const teamsConfig = {
     },
     4: {
         name: "Team 4",
-        logical: "What runs around the whole yard without moving? (Count the syllables)", // Fence -> 1
+        logical: "The Siblings: A boy has as many sisters as brothers, but each sister has only half as many sisters as brothers. How many brothers are there?solve this equation to get the first digit x^2−3x+(20/x)", // Fence -> 1
         visual: "Find the Number Of Triangles and use the first digit", // Placeholder -> 6
         visualImage: "4phy.jpeg", // Add your team 4 image to the folder and verify name
         physical: "Stare Your Teammates For 1min", // Placeholder -> 4
-        key: "144"
+        key: "944"
     },
     5: {
         name: "Team 5",
-        logical: "I am always hungry, I must always be fed. The finger I touch, will soon turn red. What am I? (Count the letters in the answer for Digit 1)", // Fire -> 4
+        logical: "The Infection: A single bacterium placed in a jar doubles every minute. The jar is full in 60 minutes. At what minute was the jar 1/4 full?solve the equation with derived answere as x to get the first digit x/29-(x-58/x)=2", // Fire -> 4
         visual: "Which Bottle Fills First", // Placeholder -> 2
         visualImage: "5phy.jpeg", // Add your team 5 image to the folder and verify name
         physical: "Invisible Chair + Arm Raise", // Placeholder -> 8
-        key: "438"
+        key: "238"
     },
     6: {
         name: "Team 6",
-        logical: "Forward I am heavy, backward I am not. What am I? (Count the vowels in the answer)", // Ton -> 1
+        logical: "If 1.5 hens lay 1.5 eggs in 1.5 days, how many eggs does 1 hen lay in 1 day?take the denominator as the first digit.", // Ton -> 1
         visual: "Which Key Fits In?", // Placeholder -> 7
         visualImage: "6phy.jpeg", // Add your team 6 image to the folder and verify name
         physical: "Dance A Hook Step", // Placeholder -> 5
-        key: "145"
+        key: "345"
     }
 };
 
