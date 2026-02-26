@@ -2,51 +2,51 @@
 const teamsConfig = {
     1: {
         name: "Team 1",
-        logical: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I? (Count the letters in the answer for Digit 1)", // Echo -> 4
-        visual: "Look closely at the provided map artifact. Count the number of red X marks indicating false paths.", // Placeholder -> 7
-        visualImage: "1.jpeg", // Add your team 1 image to the folder and verify name
-        physical: "Examine the underside of the main game table. Find the hidden sticker and read its number.", // Placeholder -> 2
-        key: "999"
+        logical: "The Book: A book costs $20 plus half its own price. How much does the book cost? solve the derive answer in this equation to get the first pin.(3x^2−4x)/5x​−(x/8)​=4.", // Echo -> 4
+        visual: "Which Way Leads To the center", // Placeholder -> 7
+        visualImage: "1phy.jpeg", // Add your team 1 image to the folder and verify name
+        physical: "Kill and laugh 5 times", // Placeholder -> 2
+        key: "442"
     },
     2: {
         name: "Team 2",
-        logical: "The more of this there is, the less you see. What is it? (Count the letters in the answer for Digit 1)", // Darkness -> 8
-        visual: "Find the hidden symbol in the constellation painting. How many points does the star have?", // Placeholder -> 5
-        visualImage: "team2_visual.jpg", // Add your team 2 image to the folder and verify name
-        physical: "Unlock the wooden box using the brass key. Inside, a number is etched on the bottom.", // Placeholder -> 3
-        key: "853"
+        logical: "A lily pad doubles in size every day. If it takes 48 days to cover the entire lake, how many days does it take to cover half the lake? use the last digit as the first pin.", // Darkness -> 8
+        visual: "Find the answer and only use the last digit from the answer?", // Placeholder -> 5
+        visualImage: "2phy.jpeg", // Add your team 2 image to the folder and verify name
+        physical: "Say A movie Dialogue", // Placeholder -> 3
+        key: "741"
     },
     3: {
         name: "Team 3",
-        logical: "I have keys but no locks. I have space but no room. You can enter but not go outside. What am I? (First letter's alphabetical position module 9)", // Keyboard -> K(11) -> 2
-        visual: "Align the transparent overlays on the window. A digit will formed by the intersection of lines.", // Placeholder -> 9
-        visualImage: "team3_visual.jpg", // Add your team 3 image to the folder and verify name
-        physical: "Weigh the three metal gears. The heaviest gear has a number stamped on its side.", // Placeholder -> 1
-        key: "291"
+        logical: "A snail is at the bottom of a 20-foot well. Each day he climbs up 3 feet, but each night he slips back 2 feet. How many days will it take him to reach the top?solve this equation to get the first digit x^2−13x+36/(x-2)-(x/6)", // Keyboard -> K(11) -> 2
+        visual: "Find the Odd One Out", // Placeholder -> 9
+        visualImage: "3phy.jpeg", // Add your team 3 image to the folder and verify name
+        physical: "Slow Motion Walk Race", // Placeholder -> 1
+        key: "549"
     },
     4: {
         name: "Team 4",
         logical: "What runs around the whole yard without moving? (Count the syllables)", // Fence -> 1
-        visual: "Check the UV markings on the blank poster. A single digit is illuminated.", // Placeholder -> 6
-        visualImage: "team4_visual.jpg", // Add your team 4 image to the folder and verify name
-        physical: "Assemble the fragmented tile puzzle. The completed image reveals a hidden number.", // Placeholder -> 4
-        key: "164"
+        visual: "Find the Number Of Triangles and use the first digit", // Placeholder -> 6
+        visualImage: "4phy.jpeg", // Add your team 4 image to the folder and verify name
+        physical: "Stare Your Teammates For 1min", // Placeholder -> 4
+        key: "144"
     },
     5: {
         name: "Team 5",
         logical: "I am always hungry, I must always be fed. The finger I touch, will soon turn red. What am I? (Count the letters in the answer for Digit 1)", // Fire -> 4
-        visual: "Shine the flashlight through the prism. How many distinct red bars appear on the wall?", // Placeholder -> 2
-        visualImage: "team5_visual.jpg", // Add your team 5 image to the folder and verify name
-        physical: "Pour the sand into the scale until it balances perfectly. The weight in grams starts with this number.", // Placeholder -> 8
-        key: "428"
+        visual: "Which Bottle Fills First", // Placeholder -> 2
+        visualImage: "5phy.jpeg", // Add your team 5 image to the folder and verify name
+        physical: "Invisible Chair + Arm Raise", // Placeholder -> 8
+        key: "438"
     },
     6: {
         name: "Team 6",
         logical: "Forward I am heavy, backward I am not. What am I? (Count the vowels in the answer)", // Ton -> 1
-        visual: "Observe the pendulum's shadow on the marked floor at exactly 3:00 PM. Which number does it point to?", // Placeholder -> 7
-        visualImage: "team6_visual.jpg", // Add your team 6 image to the folder and verify name
-        physical: "Unscrew the bottom panel of the wooden chair. A marked digit is stamped inside.", // Placeholder -> 5
-        key: "175"
+        visual: "Which Key Fits In?", // Placeholder -> 7
+        visualImage: "6phy.jpeg", // Add your team 6 image to the folder and verify name
+        physical: "Dance A Hook Step", // Placeholder -> 5
+        key: "145"
     }
 };
 
