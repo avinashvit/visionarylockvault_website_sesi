@@ -6,7 +6,7 @@ const teamsConfig = {
         visual: "Look closely at the provided map artifact. Count the number of red X marks indicating false paths.", // Placeholder -> 7
         visualImage: "1.jpeg", // Add your team 1 image to the folder and verify name
         physical: "Examine the underside of the main game table. Find the hidden sticker and read its number.", // Placeholder -> 2
-        key: "472"
+        key: "999"
     },
     2: {
         name: "Team 2",
